@@ -1,0 +1,51 @@
+# BIS Sahayak — Backend Dependencies
+# =========================================
+# Phase 4: FastAPI foundation
+# Phase 5: Database layer (SQLAlchemy + pgvector)
+# =========================================
+# Add new packages here only when a new phase requires them.
+# Never install unused packages.
+
+# Web framework
+fastapi==0.115.12
+
+# ASGI server (used to run FastAPI)
+uvicorn[standard]==0.34.0
+
+# Pydantic v2 (FastAPI uses this internally for data validation)
+pydantic==2.11.3
+
+# ── Phase 6: Ingestion Pipeline ───────────────────────────────
+# HTTP client for downloading HTML pages and PDFs
+requests==2.32.4
+
+# HTML parser (with lxml backend for speed and accuracy)
+beautifulsoup4==4.13.4
+lxml==5.4.0
+
+# PDF text extraction
+pypdf==5.6.0
+
+# ── Phase 5: Database ──────────────────────────────────────────
+# ORM and database toolkit (SQLAlchemy 2.x)
+sqlalchemy==2.0.41
+
+# PostgreSQL driver (psycopg3 — the modern successor to psycopg2)
+# [binary] bundles the compiled C extension; no system libpq install needed
+psycopg[binary]==3.2.9
+
+# pgvector — adds Vector column type to SQLAlchemy for similarity search
+pgvector==0.3.6
+
+# ── Phase 7: RAG / AI Brain ───────────────────
+# Lightweight local embedding & vector operations — zero external downloads, ₹0 cost
+numpy==2.5.3
+
+# Testing
+pytest==8.3.5
+httpx==0.28.1
+
+# ── Phase 10: Free Gemini Runtime ───────────────
+# Official Google Gemini Python SDK for Gemini 3.7 Flash free tier
+google-genai==2.22.0
+

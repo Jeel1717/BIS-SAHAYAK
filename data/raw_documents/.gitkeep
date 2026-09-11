@@ -1,0 +1,6 @@
+# Raw BIS Documents
+
+Place downloaded BIS PDF files here.
+
+This directory is intentionally NOT committed to git (see .gitignore).
+Large binary files should be stored separately (e.g., Google Drive, S3).

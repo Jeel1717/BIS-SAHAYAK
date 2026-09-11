@@ -1,0 +1,7 @@
+# GitHub Actions CI/CD Workflows
+
+CI/CD pipeline definitions will be placed here in a later phase.
+
+Planned workflows:
+- ci.yml        — Run tests on every pull request
+- deploy.yml    — Deploy to production on merge to main

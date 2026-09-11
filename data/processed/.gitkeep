@@ -1,0 +1,6 @@
+# Processed Documents
+
+This directory will contain chunked and embedded versions of BIS documents
+after running the ingestion pipeline (Phase 6+).
+
+This directory is intentionally NOT committed to git.
