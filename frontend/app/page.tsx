@@ -12,10 +12,11 @@ import { ChatMode, Message, ChatApiResponse, AssessmentData } from "./types";
 import { Language, translations } from "./i18n";
 import { parseAssessmentResponse } from "./utils/assessmentParser";
 
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL ||
+const rawApiUrl =
   process.env.NEXT_PUBLIC_API_BASE_URL ||
+  process.env.NEXT_PUBLIC_API_URL ||
   "http://127.0.0.1:8000";
+const API_URL = rawApiUrl.replace(/\/+$/, "");
 
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([]);
